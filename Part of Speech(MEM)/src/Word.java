@@ -1,28 +1,33 @@
 
 public class Word {
-	private String word;
+	private String token;
 	private String tag;
 	
-	public String getWord() {
-		return word;
+	
+	
+	public String getToken() {
+		return token;
 	}
-	public void setWord(String word) {
-		this.word = word;
+
+	public void setToken(String token) {
+		this.token = token;
 	}
+
 	public String getTag() {
 		return tag;
 	}
+
 	public void setTag(String tag) {
 		this.tag = tag;
 	}
-	
+
 	public Word() {
-		word = null;
+		token = null;
 		tag = null;
 	}
 	
-	public Word(String word, String tag) {
-		this.word = word;
+	public Word(String token, String tag) {
+		this.token = token;
 		this.tag = tag;
 	}
 }

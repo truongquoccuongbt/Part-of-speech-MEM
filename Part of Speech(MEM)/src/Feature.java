@@ -33,4 +33,19 @@ public class Feature {
 		this.currWord = current;
 		this.afterWord = after;
 	}
+	
+	public String GetToken(Word w) {
+		return w.getToken();
+	}
+	
+	public String GetTag(Word w) {
+		return w.getTag();
+	}
+	
+	
+	public void PrintFeature() {
+		System.out.println(this.beforeWord.getToken() + " " + this.beforeWord.getTag());
+		System.out.println(this.currWord.getToken() + " " + this.currWord.getTag());
+		System.out.println(this.afterWord.getToken() + " " + this.afterWord.getTag());
+	}
 }

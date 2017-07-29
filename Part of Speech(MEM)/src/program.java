@@ -12,6 +12,7 @@ public class program {
 			p.Trainning("/home/quoccuong/eclipse-workspace/Part of Speech(MEM)/data/" + i + ".pos");
 		}
 		System.out.println("Trainning successfull");
+		
 	}
 
 }

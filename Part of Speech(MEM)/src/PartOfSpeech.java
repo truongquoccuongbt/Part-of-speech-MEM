@@ -59,7 +59,7 @@ public class PartOfSpeech {
 		String[] tmp = new String[3];
 		tmp[1] = sentence[posCurr];
 		if (posCurr == 0) {
-			tmp[0] = null;
+			tmp[0] = null + "/" + null;
 		}
 		else {
 			tmp[0] = sentence[posCurr - 1];
@@ -67,7 +67,7 @@ public class PartOfSpeech {
 		}
 		
 		if (posCurr == (sentence.length - 1)) {
-			tmp[2] = null;
+			tmp[2] = null + "/" + null;
 		}
 		else {
 			tmp[2] = sentence[posCurr + 1];
@@ -80,8 +80,6 @@ public class PartOfSpeech {
 	//--------------------------------------------------------------------------
 	// Test
 	//--------------------------------------------------------------------------
-	
-	
 	
 	private Word CreateWord(String wordWithTag) {
 		Word w;
