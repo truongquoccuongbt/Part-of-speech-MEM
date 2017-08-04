@@ -2,7 +2,7 @@
 public class Feature {
 	private Word beforeWord;
 	private Word currWord;
-	private Word afterWord;
+	
 	public Word getBeforeWord() {
 		return beforeWord;
 	}
@@ -15,23 +15,15 @@ public class Feature {
 	public void setCurrWord(Word currWord) {
 		this.currWord = currWord;
 	}
-	public Word getAfterWord() {
-		return afterWord;
-	}
-	public void setAfterWord(Word afterWord) {
-		this.afterWord = afterWord;
-	}
 	
 	public Feature() {
 		currWord = new Word();
-		afterWord = new Word();
 		beforeWord = new Word();
 	}
 	
-	public Feature(Word before, Word current, Word after) {
+	public Feature(Word before, Word current) {
 		this.beforeWord = before;
 		this.currWord = current;
-		this.afterWord = after;
 	}
 	
 	public String GetToken(Word w) {
@@ -46,6 +38,5 @@ public class Feature {
 	public void PrintFeature() {
 		System.out.println(this.beforeWord.getToken() + " " + this.beforeWord.getTag());
 		System.out.println(this.currWord.getToken() + " " + this.currWord.getTag());
-		System.out.println(this.afterWord.getToken() + " " + this.afterWord.getTag());
 	}
 }

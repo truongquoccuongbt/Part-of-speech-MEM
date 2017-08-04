@@ -1,0 +1,5 @@
+N st
+V N
+N V
+. N
+sf .

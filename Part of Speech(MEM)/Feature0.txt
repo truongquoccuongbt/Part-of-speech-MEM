@@ -1,0 +1,6 @@
+st/st
+cường/N
+đi/V
+chợ/N
+./.
+sf/sf
